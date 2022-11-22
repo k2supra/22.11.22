@@ -13,7 +13,7 @@ try:
         print(item, end=" ")
     print()
 
-    dict = (list[:1], list[-1])
+    dict = (f"min = {list[:1]}, max = {list[-1]}")
     print(dict)
 
     #lis = tuple(list)
