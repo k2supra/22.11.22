@@ -13,8 +13,12 @@ try:
         print(item, end=" ")
     print()
 
-    dict = (f"min = {list[:1]}, max = {list[-1]}")
-    print(dict)
+    #dict = (f"min = {list[:1]}, max = {list[-1]}")
+    #print(dict)
+
+    data = {1: lambda lst: max(lst), 2: lambda lst: min(lst)}
+    print(data[1](list))
+    print(data[2](list))
 
     #lis = tuple(list)
     #print(lis[:1], lis[size - 1])
