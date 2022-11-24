@@ -22,15 +22,19 @@ try:
             if item // j:
                 klist.append(item)
 
+
+
+
     #kount = len(list)
     #print()
 
-    data = {1: lambda lst: max(lst), 2: lambda lst: min(lst), 3: lambda lst: list[::-1], 4: lambda lst: len(klist)}
+    data = {1: lambda lst: max(lst), 2: lambda lst: min(lst), 3: lambda lst: list[::-1], 4: lambda sie: all(size % i != 0 for i in range(2, int(size ** .5) + 1))}
     print(f"max = {data[1](list)}, min = {data[2](list)}")
+
     #print(f"min = {data[2](list)}")
     print(data[3](list))
     print()
-    print(f"easy number = {data[4](klist)}")
+    print(f"easy number = {data[4](list)}")
 
 
 
